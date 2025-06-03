@@ -255,3 +255,40 @@ main {
     text-align: center;
   }
 }
+
+#tic-tac-toe {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #003366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #f0f6ff;
+}
+
+#winner-message {
+  font-weight: bold;
+  margin-top: 1em;
+  color: #005f99;
+}
