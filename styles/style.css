@@ -1,0 +1,257 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f6ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, #b3d9ff, #cceeff);
+  color: #003366;
+  text-align: center;
+  padding: 2em 1em;
+  position: relative;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #005f99;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1em auto 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;  
+  gap: 1.5em;
+  scrollbar-width: none;
+}
+
+nav ul::-webkit-scrollbar {
+  display: none; 
+}
+
+nav ul li {
+  flex: 0 0 auto;
+}
+
+nav ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95em;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  color: #ff9933;
+}
+
+nav ul li a.active {
+  color: #ff9933;
+  border-bottom: 2px solid #ff9933;
+}
+
+main {
+  padding: 2em;
+  padding-bottom: 100px; /* Avoid being blocked by the footer */
+}
+
+main section {
+  background: #ffffff;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h1, main h2 {
+  color: #003366;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #003366;
+}
+
+button {
+  margin-top: 1em;
+  background-color: #ff9933;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e00;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0ecf7;
+  color: #333;
+  text-align: center;
+  padding: 1em;
+  z-index: 999;
+}
+
+.intro button {
+  display: inline-block;
+  width: 160px; 
+  padding: 0.7em 1em;
+  background-color: #ff9933;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Portfolio Project Layout */
+.project-block {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2em;
+  align-items: start;
+  max-width: 1100px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.03);
+}
+
+.project-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .project-block {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    margin-top: 1em;
+  }
+}
+body, html {
+  height: 100%;
+}
+
+main {
+  min-height: calc(100vh - 160px); /* Viewport height minus the height of the header and footer */
+  padding: 2em;
+  padding-bottom: 100px; /* let the content avoid footer */
+  box-sizing: border-box;
+}
+
+#pageUpBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #ff9933;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  line-height: 50px;
+  text-align: center;
+  padding: 0;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  cursor: zoom-out;
+  transition: transform 0.3s ease;
+}
+
+.intro-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  flex-wrap: wrap;  /* for mobile users */
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.intro-image {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .intro-image {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  .intro-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+}

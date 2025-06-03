@@ -1,0 +1,63 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Roy Van</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Roy Van</h1>
+    <p class="tagline">Building Tomorrow’s Web, Today</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li> 
+        <li><a href="design.html">Design Thinking</a></li>
+        <li><a href="global-goals.html">Global Goals</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-block">
+      <div class="project-text">
+        <h2>1. Web Development Portfolio (This Webpage)</h2>
+        <p>This site showcases my web development skills using HTML, CSS, and JavaScript. It includes responsive layouts, interactive features, accessibility support, and a design thinking approach—all built to meet project requirements and personal goals.</p>
+      </div>
+      <img src="images/webdev_coursework.jpg" alt="Screenshot of my web development coursework website" class="project-image">
+    </div>
+
+    <div class="project-block">
+    <div class="project-text">
+        <h2>2. Chess Hobby</h2>
+        <p>I’m passionate about all kinds of board games — Chinese Chess, International Chess, Gomoku, even Aeroplane Chess. I truly enjoy the strategic thinking they require and the thrill of battling minds across the board.</p>
+    </div>
+    <img src="images/cyberchess.png" alt="Screenshot of a conceptual art about chess" class="project-image">
+    </div>
+
+
+    <div class="project-block">
+    <div class="project-text">
+        <h2>3. Minecraft Realm Server</h2>
+        <p>During the summer, I hosted a Minecraft Realm server where my friends and I played together. After a month of building, adventuring, and laughing in this blocky world, we brought the season to a close. It was an unforgettable time of creativity and collaboration.</p>
+    </div>
+    <img src="images/mc_realm.jpg" alt="Screenshot of our Minecraft Realm world with players and buildings as background" class="project-image">
+    </div>
+  </main>
+
+    <button onclick="scrollToTop()" id="pageUpBtn" title="Go to top">▲</button>
+    <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+
+    <footer>
+    <p>&copy; 2025 Roy Van</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

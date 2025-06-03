@@ -1,0 +1,62 @@
+<!-- design.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Design Thinking | Roy Van</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Roy Van</h1>
+    <p class="tagline">Building Tomorrow’s Web, Today</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="design.html" class="active">Design Thinking</a></li>
+        <li><a href="global-goals.html">Global Goals</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+    <h2>How I Applied Design Thinking</h2>
+    <p>I followed the design thinking process while building this website. First, I <strong>empathized</strong> with future users by considering what makes a site easy to use and visually clear. I then <strong>defined</strong> the key goals: accessibility, visual balance, and responsiveness across devices.</p>
+    <p>Next, I <strong>ideated</strong> by sketching layout ideas and choosing a <span style="color: #b3d9ff; font-weight: bold;">blue</span>-<span style="color: #ff9933; font-weight: bold;">orange</span> color palette that’s both modern and readable. I <strong>prototyped</strong> the design using HTML and CSS, and later <strong>tested</strong> on different screens and with peers to fix layout bugs, navigation flow, and hover behavior. The final site is clean, futuristic, and user-friendly.</p>
+    <hr>
+    <h2>Behind the Curtain</h2>
+    <h3>🧩 Challenges I Faced</h3>
+    <p>    <p>I ran into a ton of challenges building this site — like seriously, *a lot*. Figuring out how to make images zoom with Lightbox? Not as easy as I thought. Making sure all the images looked clean and the same size? That took forever. My CSS file got way too long, so I had to wrestle it into shape. And the “scroll to top” button? Took some trial, error, and more error. But in the end, every bug and mess taught me something new — and that’s what made it fun.</p>
+    <img src="images/lightbox.jpg" alt="Screenshot of a lightbox tutorial on Youtube" class="project-image">
+    <p>A tutorial about lightbox: <a href="https://www.youtube.com/watch?v=uKVVSwXdLr0&t=63s" target="_blank">Watch on YouTube</a></p>
+    <img src="images/pgup.jpg" alt="Screenshot of a scroll to top button tutorial on Youtube" class="project-image">
+    <p>A tutorial about PageUp Button: <a href="https://www.youtube.com/watch?v=znZAmDSNDg8" target="_blank">Watch on YouTube</a></p>
+
+    <h3>🛠️ Using Developer Tools</h3>
+    <p>I frequently went to <a href="https://vscodeedu.com/courses/intro-to-web-dev" target="_blank" style="color: #007acc; text-decoration: underline;">Microsoft Web Development Course</a> by Mary Kiang and Atiyah Conry to inspect HTML structure, test CSS changes live, and debug layout issues. It helped me adjust element positioning and fix responsive design bugs.</p>
+
+    <img src="images/MS_Course.jpg" alt="Screenshot showing Microsoft Web Development Course" class="project-image">
+
+    <h3>📚 What I Learned</h3>
+    <p>This project taught me how different elements work together—how HTML provides structure, CSS controls style, and JavaScript adds interactivity. I also learned how to make my site responsive and accessible for everyone.</p>
+
+    <h3>💡 A Look at the Code</h3>
+    <p>Here's a peek at part of my code for the navigation bar and responsive layout:</p>
+    <img src="images/nav_code.jpg" alt="Screenshot of HTML/CSS code for website navigation bar" class="project-image">
+    
+    <p>Overall, building this site has improved my confidence in writing clean, organized code while also thinking about user experience and accessibility.</p>
+  </section>
+  </main>
+    <button onclick="scrollToTop()" id="pageUpBtn" title="Go to top">▲</button>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+    <!-- Load JavaScript -->
+    <script src="scripts/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Roy Van</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roy Van | Future Web Dev</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Roy Van</h1>
+    <p class="tagline">Building Tomorrow’s Web, Today</p>
+    <nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="design.html">Design Thinking</a></li>
+        <li><a href="global-goals.html">Global Goals</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+    <div class="intro-flex">
+        <div class="intro-text">
+        <h2>Hello, Welcome!</h2>
+        <p>I’m Roy — a new web developer passionate about clean code, intuitive design, and meaningful digital experiences. I started exploring computers from a young age, diving into websites, games, and system interfaces. Today, I build web projects <span title="For the purpose of completing this assignment" style="text-decoration: underline; text-underline-offset: 3px;">to demonstrate creativity in my mind</span>, and I constantly seek to improve accessibility, performance, and visual style.</p>
+        <button onclick="toggleText()">Show Message</button>
+        <p id="hiddenText" style="display:none">🚀 Let's build something meaningful!</p>
+        </div>
+        <img src="images/cyberfox.png" alt="Cyberfox in futuristic room" class="intro-image project-image">
+    </div>
+    </section>
+
+  </main>
+
+    <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+
+  <footer>
+    <p>&copy; 2025 Roy Van | Designed in the future</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
